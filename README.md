@@ -22,3 +22,4 @@ Write up on that visible here:
 Finally, today is December 28th and I took a drive in my dads 69 vette, which he put new wheels on: 
 
 ![car guy](projects/images/car/carguy.jpg)
+woot
