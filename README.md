@@ -13,13 +13,12 @@ I find this image especially compelling because it shows my foam cutter.
 
 While im here, I might as well test some gif functionality:
 
-![My Image](https://github.com/eliwilliams1337/website/blob/7fb37aa3e5407c2c8ef7f0d0d34a7a799ad3dd70/projects/images/facade/facadeGif.gif)
+![My Gif](https://github.com/eliwilliams1337/website/blob/7fb37aa3e5407c2c8ef7f0d0d34a7a799ad3dd70/projects/images/facade/facadeGif.gif)
 
 Write up on that visible here:
 
-# ![Facade Study](projects/images/facade/README.md)
+![Facade Study](projects/images/facade/README.md)
 
 Finally, today is December 28th and I took a drive in my dads 69 vette, which he put new wheels on: 
 
 ![car guy](projects/images/car/carguy.jpg)
-woot
