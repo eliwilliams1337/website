@@ -1,4 +1,4 @@
-![My Image](projects/images/facadeGif.gif)
+![My Image](projects/images/facade/facadeGif.gif)
 
 This is a gif that can be used to visualize the effects of different shaped facades on the development of interior spaces.
 
