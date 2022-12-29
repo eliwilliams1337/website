@@ -1,4 +1,4 @@
-![My Image](projects/images/facade/facadeGif.gif)
+## Early Facade Studies
 
 ![Facade Gif](https://github.com/eliwilliams1337/website/blob/7fb37aa3e5407c2c8ef7f0d0d34a7a799ad3dd70/projects/images/facade/facadeGif.gif)
 
