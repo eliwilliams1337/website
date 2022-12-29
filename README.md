@@ -1,5 +1,5 @@
 ## Welcome Home.
-# This is the Archive for Projects by#
+# This is the Archive for Projects by
 ## Elijah Williams  
 
 This site currently has two images and two projects. 
@@ -7,12 +7,19 @@ This site currently has two images and two projects.
 This first folder is called albatross and contains images and writing about the studio. 
 
 Here is the first image:
-![My Image](images/albatross1.jpg)
+![My Image](projects/images/albatross1.jpg)
 
 Here is the second image:
+![My Image](projects/images/albatross/albatross1.jpg)
 
-![My Image](images/albatross2.jpg)
+I find this image especially compelling because it shows my foam cutter.
 
-Here is a link that takes you to the "projects" folder:
+![My Image](projects/images/albatross/albatross2.jpg)
 
-![Projects](projects)
+While im here, I might as well test some gif functionality:
+
+![My Image](projects/images/facade.jpg)
+
+Got a little write up on that visible here:
+
+![My Images](projects/facade)
