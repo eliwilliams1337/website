@@ -18,3 +18,7 @@ While im here, I might as well test some gif functionality:
 Write up on that visible here:
 
 # ![Facade Study](projects/images/facade/README.md)
+
+Finally, today is December 28th and I took a drive in my dads 69 vette, which he put new wheels on: 
+
+[car guy](projects/images/car/carguy.jpg)
