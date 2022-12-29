@@ -10,10 +10,6 @@ This works, kinda?
 ![My Image](images/albatross1.jpg)
 #it comes before and after
 
-//this works, great!
-![My Image](images/BaseballStream/PXL_20221228_193720998.jpg)
-#it comes before and after
-
 <img
   src="/images/albatross1/img.jpg"
   alt="Alt text"
