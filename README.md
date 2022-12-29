@@ -1,25 +1,20 @@
-## Welcome Home.
-# This is the Archive for Projects by
-## Elijah Williams  
+### Welcome Home.
+## This is the Archive for Projects by
+# Elijah Williams  
 
-This site currently has two images and two projects. 
-
-This first folder is called albatross and contains images and writing about the studio. 
-
-Here is the first image:
-![My Image](projects/images/albatross1.jpg)
+The First Project is Visible Below, and images are linked via their corresponding folder.
 
 Here is the second image:
 ![My Image](projects/images/albatross/albatross1.jpg)
 
 I find this image especially compelling because it shows my foam cutter.
 
-![My Image](projects/images/albatross/albatross2.jpg)
+![Foam Cutter](projects/images/albatross/albatross2.png)
 
 While im here, I might as well test some gif functionality:
 
-![My Image](projects/images/facadeGif.gif)
+![My Image](https://github.com/eliwilliams1337/website/blob/7fb37aa3e5407c2c8ef7f0d0d34a7a799ad3dd70/projects/images/facade/facadeGif.gif)
 
-Got a little write up on that visible here:
+Write up on that visible here:
 
-![My Images](projects/images/facade)
+# ![Facade Study](projects/images/facade/README.md)
