@@ -18,8 +18,8 @@ I find this image especially compelling because it shows my foam cutter.
 
 While im here, I might as well test some gif functionality:
 
-![My Image](projects/images/facade.jpg)
+![My Image](projects/images/facadeGif.gif)
 
 Got a little write up on that visible here:
 
-![My Images](projects/facade)
+![My Images](projects/images/facade)
