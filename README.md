@@ -13,7 +13,8 @@ I find this image especially compelling because it shows my foam cutter.
 
 Write up on that visible here:
 
-![Facade Study](website/projects/images/facade/README.md)
+![facadeGif](https://user-images.githubusercontent.com/31259842/210905873-da6ba582-0be6-45d2-919c-cb3d6c2d3e12.gif)
+
 
 Finally, today is December 28th and I took a drive in my dads 69 vette, which he put new wheels on: 
 
