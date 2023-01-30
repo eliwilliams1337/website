@@ -2,7 +2,7 @@
 
 [New Page on Shaders!](shader.md)
 
-[New Page on Jay Breaker house!](projects/JaybreakerHouse.MD)
+[New Page on Jay Breaker house!](projects/JayBreakerHouse.MD)
 
 ### This is the Archive for Projects by
 # Elijah Williams  
@@ -10,7 +10,7 @@
 Project Structure:
 [Custom Pixel Shaders](shader.md)
 
-[Jay Breaker house!](projects/JaybreakerHouse.MD)
+[Jay Breaker house!](projects/JayBreakerHouse.MD)
 
 *The Studio*
 ![My Image](projects/images/albatross/albatross1.jpg)
