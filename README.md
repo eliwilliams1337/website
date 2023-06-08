@@ -1,6 +1,6 @@
 ##### Welcome Home.
 
-[New Page on Shaders!](shader.md)
+[New Page on Shaders!](projects/shader.md)
 
 [New Page on Jay Breaker house!](projects/JayBreakerHouse.MD)
 
