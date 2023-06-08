@@ -1,27 +1,26 @@
 ##### Welcome Home.
 
-[New Page on Shaders!](projects/shader/shader.md)
-## This is the Archive for Projects by
+[New Page on Shaders!](shader.md)
+
+[New Page on Jay Breaker house!](projects/JayBreakerHouse.MD)
+
+### This is the Archive for Projects by
 # Elijah Williams  
 
-The First Project is Visible Below, and images are linked via their corresponding folder.
+Project Structure:
+[Custom Pixel Shaders](shader.md)
 
-Here is the second image:
+[Jay Breaker house!](projects/JayBreakerHouse.MD)
+
+*The Studio*
 ![My Image](projects/images/albatross/albatross1.jpg)
 
-I find this image especially compelling because it shows my foam cutter.
-
-![Foam Cutter](projects/images/albatross/albatross2.png)
-
-Write up on that visible here:
-
-![facadeGif](https://user-images.githubusercontent.com/31259842/210905873-da6ba582-0be6-45d2-919c-cb3d6c2d3e12.gif)
-
-
-Finally, today is December 28th and I took a drive in my dads 69 vette, which he put new wheels on: 
-
+Site Currently Under Construction
 ![car guy](projects/images/car/carguy.jpg)
 
-#### GIF TEST
 ![mover](https://user-images.githubusercontent.com/31259842/210905310-f632e9c5-a51d-4a68-9253-e30ed8598a27.gif)
-:")
+
+ABOUT ELIJAH:
+![PXL_20230420_204952103~3](https://user-images.githubusercontent.com/31259842/234937516-51a12de7-0e0d-42e4-88d8-3313a972be63.jpg)
+
+Elijah Williams is an instructor in the New York Insitute of Technology School of Architecture and Design, where he teaches on the Fourth Year Comprehensive Design Studio Team. His work as a founding member of ARTIFEX TOOLS challenges the technical proclivity of the design profession by creating tools to improve access to complex systems and data structures. His design studios and work at the recently founded STUDIO ALBATROSS in Long Island City focus on hands-on model making, public data systems and challenging formal design logics relationship to urban development. He attended Cal Poly San Luis Obispo and has previously taught at Boston Architectural College.
