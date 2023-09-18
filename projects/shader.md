@@ -11,6 +11,6 @@ It is technically more of a pixel art filter, that takes a raytraced light condi
 ![SearchingForPointCloudData](https://user-images.githubusercontent.com/31259842/214622935-40a2cd16-6081-4b05-a93b-f86cfdaf75eb.png)
 
 These two new vectorized studies enable a new version of the shader which is available as a .ini in this folder on github.
-![My Image](projects/images/shader/long_test1.jpg)
-![My Image](projects/images/shader/long_test2.jpg)
+![My Image](images/shader/long_test1.jpg)
+![My Image](images/shader/long_test2.jpg)
 
