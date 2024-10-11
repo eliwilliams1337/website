@@ -18,10 +18,23 @@ Elijah Williams is the digital technology specialist and an instructor at the Ne
 
 ![PXL_20230420_204952103~3](https://user-images.githubusercontent.com/31259842/234937516-51a12de7-0e0d-42e4-88d8-3313a972be63.jpg)
 
+## Projects:
+_... means nothing on github yet but I'm working on it_
+
+_.. means images found and put in folder_
+
+_. means images up but no writing_
+
+
+[...]Shake Table (found in email somewhere I thinK...)
+Light Path
+On Machine Programming
+Need Evidence for RNN Robot (Maybe Hackathon for now?)
+
+
 Web URL:
 
 https://eliwilliams1337.github.io/website/
 
 Site Currently Under Construction
-![car guy](projects/images/car/carguy.jpg)
 
