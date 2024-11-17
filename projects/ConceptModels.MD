@@ -19,7 +19,7 @@ Profeshional:
 
 [Undergraduate Models](models/Thesismodles/SPRINGBOOK_TEST2/1.jpeg)
 
-![Thesis Models](models/Thesismodles/SPRINGBOOK_TEST2/1.jpeg)
+![Thesis Models](ttps://github.com/eliwilliams1337/website/blob/main/projects/models/Thesismodles/SPRINGBOOK_TEST2/1.jpeg)
 
 [Masters Environmental Performance Models]
 
