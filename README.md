@@ -3,17 +3,13 @@
 ### This is the Archive for Projects by
 # Elijah Williams  
 
-![PXL_20230420_204952103~3](https://user-images.githubusercontent.com/31259842/234937516-51a12de7-0e0d-42e4-88d8-3313a972be63.jpg)
+## Projects:
 
-# Projects:
-
-Pages:
+### Pages:
 
 * [Robotics Lab](projects/robots.md)
 
-* [JayBreakerHouse](projects/JayBreakerHouse.MD)
-
-* [GarageScreen](projects/garagescreen.md)
+* [Concept Models](projects/ConceptModels.MD)
 
 * [ShakerTable](projects/ShakeTable.md)
 
@@ -21,16 +17,19 @@ Pages:
 
 * [Shaders](projects/shader.md)
 
+* [GarageScreen](projects/garagescreen.md)
+
 ... want to browse some other images that aren't pages yet? [here...](projects/images)
 
-## List of Projects Maintained that are hosted other places:
+### List of Projects maintained (or supported) that are hosted other places:
 
 1. Digital Mapping Tools Tool Box [Link](https://libguides.nyit.edu/digitalmappingtools)
 
 2. Simulated and Measured Environements Lab [Link](https://libguides.nyit.edu/c.php?g=1412365&p=10498257)
 
-![mover](https://user-images.githubusercontent.com/31259842/210905310-f632e9c5-a51d-4a68-9253-e30ed8598a27.gif)
+3. NYiT Digital Resources Page [Link](https://digitalfabricationlab-nyit-soad.github.io/resources/)
 
+![mover](https://user-images.githubusercontent.com/31259842/210905310-f632e9c5-a51d-4a68-9253-e30ed8598a27.gif)
 
 Updates (can always check on github too...):
 
