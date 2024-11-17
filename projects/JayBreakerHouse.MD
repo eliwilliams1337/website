@@ -16,7 +16,9 @@ Evidence of other models:
 
 Profeshional:
 [JEI for Richard Meier](https://meierpartners.com/project/jei-commercial-building)
+
 [Thesis Models](models/Thesismodles/SPRINGBOOK_TEST2)
+
 Further reading 
 
 [here](www.trainsarefun.com/lirr/jamaica/jamaica.htm)
