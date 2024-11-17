@@ -17,7 +17,11 @@ Evidence of other models:
 Profeshional:
 [JEI for Richard Meier](https://meierpartners.com/project/jei-commercial-building)
 
-[Thesis Models](models/Thesismodles/SPRINGBOOK_TEST2)
+[Undergraduate Models](models/Thesismodles/SPRINGBOOK_TEST2/1.jpeg)
+
+![Thesis Models](models/Thesismodles/SPRINGBOOK_TEST2/1.jpeg)
+
+[Masters Environmental Performance Models]
 
 Further reading 
 
