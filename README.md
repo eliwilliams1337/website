@@ -13,7 +13,7 @@
 
 * [ShakerTable](projects/ShakeTable.md)
 
-* [History of Artifex Technologies Inc](projects/artifexstory.md
+* [History of Artifex Technologies Inc](projects/artifexstory.md)
 
 * [Writing and Papers](projects/papers.md)
 
