@@ -9,6 +9,8 @@
 
 * [Robotics Lab](projects/robots.md)
 
+* [Jamaica Transit Station Research](projects/JamaicaTrainStation.md)
+
 * [Concept Models](projects/ConceptModels.MD)
 
 * [ShakerTable](projects/ShakeTable.md)
