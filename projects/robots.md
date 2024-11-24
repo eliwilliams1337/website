@@ -2,11 +2,11 @@
 
 ## About
 
-NYIT Labs on Long Island and in Manhattan, including many of the short and long term projects completed in year 1.
+NYIT Labs on Long Island and in Manhattan, including many of the short and long term projects completed in year 1 and 2.
 
 ### Using Predictive Positioning
 
-Simulating the entire procedural generation to predict path confinclits and isolations
+Simulating the entire procedural generation to predict path conflicts and isolations
 
 ![image3](https://github.com/user-attachments/assets/baa4770e-5a75-41f1-ad69-f76c0144c1c3)
 
@@ -16,7 +16,7 @@ Simulating the entire procedural generation to predict path confinclits and isol
 
 ### Programming Targetted Fabrication Tasks
 
-Set of isometric views including conflict zones for probing excersize
+Set of isometric views including conflict zones for probing exercise
 
 Front 
 
@@ -102,11 +102,11 @@ Many more still in development...
 
 ## Learnings
 
-Grasshopper KUKA PRC, including direct coorespondence with the develpoers
+Grasshopper KUKA PRC, including direct correspondence with the developers
 
 On Machine Programming with 6 & 7 axis robotic arms
 
-Increasing Student Engagemnet on complex tasks
+Increasing Student Engagement on complex tasks
 
 Project Development and Management for sourcing, drawing and assembling of robots parts and software
 
