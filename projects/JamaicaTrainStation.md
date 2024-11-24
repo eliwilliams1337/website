@@ -6,7 +6,7 @@ I was given the opportunity to develop a new syllabus for Fourth Year Students a
 
 The project focused on three main issues related to the site:
 
-Interlocking transportation modes at the Jamaica Station complex
+_Interlocking transportation modes at the Jamaica Station complex_
 
 * MTA Queens Bus Hub for MTA and NYCT, with over 20 distinct routes
 
@@ -14,13 +14,13 @@ Interlocking transportation modes at the Jamaica Station complex
 
 * Eastern extents of MTA Subway Lines E and J.
 
-Role of the city and developers in corporate expansion into diverse and economically impoverished areas
+_Role of the city and developers in corporate expansion into diverse and economically impoverished areas_
 
 * Large speculative mixed use housing projects now dominate the site
 
 * Met with Greater Jamaica Development Corporation to understand corporate structuring
 
-Architectural and Engineering Complexity
+_Architectural and Engineering Complexity_
 
 * Interconnectivity, fume and weight support needed for train system
 
@@ -79,39 +79,41 @@ Peter Panagi & Nicholas Orsini
 
 ![4](https://github.com/user-attachments/assets/6296cb62-9f84-4cd1-bb6a-87654b34b66b)
 
-
-
 ### Models
 
 James O'Brien & Nke Adwowa Opoku
 
 ![7](https://github.com/user-attachments/assets/d75bd2da-d4fe-4166-8b44-8e8b1d64b8fe)
 
+### Final Posters
+
+Each Student pair team presented a final presentation board that sumarized their proposal for the expansion
+
+Daniel Hahn & Liyth Musallam
+
+![danialliyth_SCALED](https://github.com/user-attachments/assets/ed4ee1ae-a494-48b3-ac85-7a0828c25eba)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-## Students in the class:
+## Students in the class Spring 2023:
 
 Henrique Errera
+
 Daniel Hahn
+
 Alyssa Matatov
+
 Liyth Musallam
+
 James O'Brien
+
 Nke Adwowa Opoku
+
 Peter Panagi
+
 Nicholas Orsini 
+
 Nicholas Reichert
+
 Allison Cassano
 
 
