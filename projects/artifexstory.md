@@ -32,10 +32,6 @@ ARTIFEX came out of my research at Cal Poly San Luis Obispo, analyzing and devel
 
 Working with Rotational Calibration and MPUS for inverse location estimation
 
-Patent Drawing Draft for Tech
-
-![ARTIFEX_153925CLM_DRAFT1_Feb7](https://github.com/user-attachments/assets/78d24eaa-a99f-4fa4-9944-96618a72d78b)
-
 MPU and Calibration Sphere
 
 ![POCV1](https://github.com/user-attachments/assets/b5111e18-49a7-400d-a0d0-6413a74441ca)
@@ -47,6 +43,10 @@ Wall Walking Classification from MPU Data
 ![Virtual_floorplan](https://github.com/user-attachments/assets/84bb85c9-1b3f-4925-ac35-7eb078768e71)
 
 ![Capture](https://github.com/user-attachments/assets/016d2d21-d52e-408d-9b66-a67d8ab8cd10)
+
+Patent Drawing Draft for Tech
+
+![ARTIFEX_153925CLM_DRAFT1_Feb7](https://github.com/user-attachments/assets/78d24eaa-a99f-4fa4-9944-96618a72d78b)
 
 Design, soldering and wiring components at home for early prototypes
 
