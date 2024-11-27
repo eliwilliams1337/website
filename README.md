@@ -41,13 +41,16 @@ Updates (can always check on github too...):
 
 ABOUT ELIJAH:
 
-![PXL_20230420_204952103~3](https://user-images.githubusercontent.com/31259842/234937516-51a12de7-0e0d-42e4-88d8-3313a972be63.jpg)
+[](![PXL_20230420_204952103~3](https://user-images.githubusercontent.com/31259842/234937516-51a12de7-0e0d-42e4-88d8-3313a972be63.jpg)])
 
 
 Elijah Williams is the digital technology specialist and an instructor at the New York Insitute of Technology School of Architecture and Design, where he has taught on the Fourth Year Comprehensive Design Studio Team and focuses on advanced modelling and fabrication techniques. His work as the founding member of ARTIFEX TOOLS challenged the technical proclivity of the design profession by creating tools to improve access to complex systems and data structures. His design studios and work at the recently founded STUDIO ALBATROSS in Long Island City focus on hands-on model making, public data systems and challenging formal design logics relationship to urban development. He attended Cal Poly San Luis Obispo and has previously taught at Spitzer CCNY, Cal Poly SLO and the Boston Architectural College.
-Web URL:
+
+Resume & CV: [Here](https://docs.google.com/document/d/1uRs6T1rA4u5POm-zIP_30t6DSd9YI1l-yyA8Fe2yPig/edit?usp=sharing)
+
+Jekyll Version of this same website information:
 
 https://eliwilliams1337.github.io/website/
 
-Site Currently Under Construction
+_Site Currently Under Construction . . . ._
 
