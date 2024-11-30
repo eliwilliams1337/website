@@ -69,6 +69,8 @@ In Class Presentation for Undergraduate Students
 
 Manhattan Adapted Welding Tables
 
+[Link to IMF Presentation](https://nyinstituteoftechnology-my.sharepoint.com/:p:/g/personal/ewilli14_nyit_edu/EUdR9NjIx1tPkXyzQm7ky0MBgAUNlBWK365mQy1_AJUXXQ?e=1WtW8n)
+
 ![PXL_20240826_192656355](https://github.com/user-attachments/assets/5edbe61d-9111-484e-9a6c-e01c35c56f03)
 
 ![PXL_20241018_151101708 RAW-01 COVER](https://github.com/user-attachments/assets/36af25f8-13b1-4ab6-9f63-66717f770f2f)
@@ -94,7 +96,25 @@ Early Foam Cutting Samples
 
 ![PXL_20230831_145619275](https://github.com/user-attachments/assets/b9b6ecf2-6435-42ba-ac28-9a9e964ad56d)
 
+### Servo Testing and Learning Agents on Big Max and Little Max
 
+This project is for increasing student learning on robotics control systems and tesitng PUG Neural Agents for dynamic action
+
+Big Max Balancing Test
+
+![PXL_20241007_155735219 RAW-01 COVER](https://github.com/user-attachments/assets/72fc4683-71e7-4903-98d2-4023a29eba13)
+
+![PXL_20241007_153621999 RAW-01 COVER](https://github.com/user-attachments/assets/28a795e8-eb21-4e61-be55-b9e052355cb4)
+
+Little Max Finger Tracking using Firefly 
+
+![Slide5](https://github.com/user-attachments/assets/52d648b4-cd23-4ecd-a1cb-9cf1e151cf05)
+
+![Slide7](https://github.com/user-attachments/assets/1334d47a-bf68-4e69-a163-c8d64534268f)
+
+![Slide6](https://github.com/user-attachments/assets/d9ad716e-81fb-48fe-a296-fe94978006c6)
+
+[Movement Pattern Using Grasshopper IK Mapping](https://nyinstituteoftechnology-my.sharepoint.com/:p:/g/personal/ewilli14_nyit_edu/EUdR9NjIx1tPkXyzQm7ky0MBgAUNlBWK365mQy1_AJUXXQ?e=9LP6Xs&nav=eyJzSWQiOjI2NywiY0lkIjoyMTc2MDI0MjYxfQ)
 
 Many more still in development...
 
