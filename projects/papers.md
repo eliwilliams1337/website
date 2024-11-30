@@ -47,6 +47,14 @@ I wrote a small passage for a brasilian journal called _Dramaturgias_ in 2017 th
 
 [PDF HERE](https://periodicos.unb.br/index.php/dramaturgias/article/view/24910/21998)
 
+Jamaica Train Station Syllabus 
+
+[PDF HERE](images/Papers/JamaicaTrainStation_syl.pdf)
+
+Example First Year Design Project 
+
+[PDF HERE](images/Papers/FirstYearExample.pdf)
+
 ## Resume and CV (also email)
 
 [Resume Link](https://docs.google.com/document/d/1uRs6T1rA4u5POm-zIP_30t6DSd9YI1l-yyA8Fe2yPig/edit?usp=sharing)
