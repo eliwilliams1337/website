@@ -39,6 +39,7 @@
 Updates (can always check on github too...):
 
 11/16: Added more robotics related images and restructured the home page... 
+11/30: Added ARTIFEX Page and more links
 
 ABOUT ELIJAH:
 
