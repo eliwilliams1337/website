@@ -29,9 +29,10 @@
 
 1. Digital Mapping Tools Tool Box [Link](https://libguides.nyit.edu/digitalmappingtools)
 
-2. Simulated and Measured Environements Lab [Link](https://libguides.nyit.edu/c.php?g=1412365&p=10498257)
+2. Simulated and Measured Environements Lab [Summary](https://github.com/eliwilliams1337/website/blob/main/projects/images/Env_Sim/24.11.%20SaME%20Lab%20Activity%20Summary.pdf) & [Library Guide](https://libguides.nyit.edu/c.php?g=1412365&p=10498257)
+  
 
-3. NYiT Digital Resources Page [Link](https://digitalfabricationlab-nyit-soad.github.io/resources/)
+4. NYiT Digital Resources Page [Link](https://digitalfabricationlab-nyit-soad.github.io/resources/)
 
 ![mover](https://user-images.githubusercontent.com/31259842/210905310-f632e9c5-a51d-4a68-9253-e30ed8598a27.gif)
 
