@@ -83,6 +83,14 @@ Early screen capture version of Demo in Grasshopper and Rhino
 
 ![goofydimensionsimg](https://github.com/user-attachments/assets/83d42982-5e11-4fc8-8f25-6c39b7a60b6c)
 
+Details of Algoritm in Practice. Accuracy became a double edged sword, squaring was used in this example
+
+![AccuracyOfScanToDrawing](https://github.com/user-attachments/assets/1e9deec7-2c02-4e72-8d55-7fc4a42e2ab2)
+
+![AnimationShort20seconds](https://github.com/user-attachments/assets/ab05a158-96ab-435e-a81a-c8793d7109e9)
+
+
+
 ### Sequence Diagrams 
 As the technical founding member, I managed the timelines for production of hardware and software demos and products, while also contributing on pitchdecks and doing presentations.
 
