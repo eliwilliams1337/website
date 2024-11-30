@@ -102,5 +102,8 @@ As the technical founding member, I managed the timelines for production of hard
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/XjM16xWX3m4/0.jpg)](https://www.youtube.com/watch?v=XjM16xWX3m4)
 
+##[Best place to reach out](https://www.instagram.com/elijahreference/)
 
-[Best place to reach out](https://www.instagram.com/elijahreference/))
+### [TAKE ME HOME](https://eliwilliams1337.github.io/website/)
+
+
