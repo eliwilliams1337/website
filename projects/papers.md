@@ -6,17 +6,7 @@ Both my undergraduate and master's degrees were not publishing paper focused pro
 
 Despite this, I have had a handful of interesting opportunities to write on Architecture, Art and Education.
 
-If you want to learn about my background, my CV and Resume are also linked:
-
-## Resume and CV (also email)
-
-[Resume Link](https://docs.google.com/document/d/1uRs6T1rA4u5POm-zIP_30t6DSd9YI1l-yyA8Fe2yPig/edit?usp=sharing)
-	
-## Collage paper
-
-This paper was written with Vanessa Viola as a reflection and proposition as to the value and role of collage in beginning design excersize
-
-[PDF HERE](images/Papers/TAD_CollagePlan-2.pdf)
+If you want to learn about my background, see my CV below.
 
 ## Education paper
 
@@ -29,6 +19,12 @@ Completed during my Masters, taking classes in the education department to help 
 This paper, from a single semester research project into the role of LiDAR scans in the built environment.
 
 [PDF HERE](images/Papers/ElijahWIlliams_ArchitectureAnnotatedBibliograph.pdf)
+
+## Collage paper
+
+This paper was written with Vanessa Viola as a reflection and proposition as to the value and role of collage in beginning design excersize
+
+[PDF HERE](images/Papers/TAD_CollagePlan-2.pdf)
 
 ## Technical Writing
 
