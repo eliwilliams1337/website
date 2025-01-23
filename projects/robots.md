@@ -4,6 +4,8 @@
 
 NYIT Labs on Long Island and in Manhattan, including many of the short and long term projects completed in year 1 and 2.
 
+RECENT UPDATES: [Video from IMF2024 Conference is now LIVE](https://www.youtube.com/watch?v=LHxgkn8Sp8U)
+
 ### Using Predictive Positioning
 
 Simulating the entire procedural generation to predict path conflicts and isolations
