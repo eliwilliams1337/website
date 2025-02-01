@@ -10,18 +10,10 @@ This model is built with attachment points to let allow for easy and iterative d
 
 ![P1010019](https://user-images.githubusercontent.com/31259842/215509846-1dbb1d05-e4a4-4783-820d-cd67215a8c8f.JPG)
 
-By providing a framework for entry point, design starts week one instead of week seventeen.
-
-Evidence of other models:
+By providing a framework for entry point, design starts week one instead of week 12.
 
 Profeshional:
 [JEI for Richard Meier](https://meierpartners.com/project/jei-commercial-building)
-
-[Undergraduate Models](models/Thesismodles/SPRINGBOOK_TEST2/1.jpeg)
-
-![Thesis Models](ttps://github.com/eliwilliams1337/website/blob/main/projects/models/Thesismodles/SPRINGBOOK_TEST2/1.jpeg)
-
-[Masters Environmental Performance Models]
 
 Further reading 
 
