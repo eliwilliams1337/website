@@ -1,0 +1,248 @@
+{
+    "Building": {
+        "Building": {
+            "loads_convergence_tolerance_value": 0.04,
+            "maximum_number_of_warmup_days": 25,
+            "north_axis": 0,
+            "solar_distribution": "FullExterior",
+            "temperature_convergence_tolerance_value": 0.4,
+            "terrain": "Suburbs"
+        }
+    },
+    "ElectricLoadCenter:Distribution": {
+        "Simple Electric Load Center": {
+            "electrical_buss_type": "DirectCurrentWithInverter",
+            "generator_demand_limit_scheme_purchased_electric_demand_limit": 0,
+            "generator_list_name": "PV list",
+            "generator_operation_scheme_type": "Baseload",
+            "inverter_name": "Simple Ideal Inverter"
+        }
+    },
+    "ElectricLoadCenter:Generators": {
+        "PV list": {
+            "generator_outputs": [
+                {
+                    "generator_name": "Panel0",
+                    "generator_object_type": "Generator:Photovoltaic",
+                    "generator_rated_electric_power_output": 20000
+                },
+                {
+                    "generator_name": "Panel1",
+                    "generator_object_type": "Generator:Photovoltaic",
+                    "generator_rated_electric_power_output": 20000
+                }
+            ]
+        }
+    },
+    "ElectricLoadCenter:Inverter:Simple": {
+        "Simple Ideal Inverter": {
+            "availability_schedule_name": "AlwaysOn",
+            "inverter_efficiency": 1.0,
+            "radiative_fraction": 0.0
+        }
+    },
+    "Generator:Photovoltaic": {
+        "Panel0": {
+            "heat_transfer_integration_mode": "Decoupled",
+            "module_performance_name": "Panel0PhotovoltaicPerformance",
+            "number_of_modules_in_series": 1,
+            "number_of_series_strings_in_parallel": 1,
+            "photovoltaic_performance_object_type": "PhotovoltaicPerformance:Simple",
+            "surface_name": "Panel0Surf"
+        },
+        "Panel1": {
+            "heat_transfer_integration_mode": "Decoupled",
+            "module_performance_name": "Panel1PhotovoltaicPerformance",
+            "number_of_modules_in_series": 1,
+            "number_of_series_strings_in_parallel": 1,
+            "photovoltaic_performance_object_type": "PhotovoltaicPerformance:Simple",
+            "surface_name": "Panel1Surf"
+        }
+    },
+    "GlobalGeometryRules": {
+        "GlobalGeometryRules 1": {
+            "coordinate_system": "Relative",
+            "starting_vertex_position": "LowerLeftCorner",
+            "vertex_entry_direction": "Counterclockwise"
+        }
+    },
+    "Output:Variable": {
+        "Output:Variable 1": {
+            "key_value": "*",
+            "reporting_frequency": "Hourly",
+            "variable_name": "Generator Produced DC Electricity Energy"
+        },
+        "Output:Variable 2": {
+            "key_value": "*",
+            "reporting_frequency": "Hourly",
+            "variable_name": "Electric Storage Simple Charge State"
+        },
+        "Output:Variable 3": {
+            "key_value": "*",
+            "reporting_frequency": "Hourly",
+            "variable_name": "Facility Total Purchased Electricity Energy"
+        },
+        "Output:Variable 4": {
+            "key_value": "*",
+            "reporting_frequency": "Hourly",
+            "variable_name": "Facility Total Surplus Electricity Energy"
+        },
+        "Output:Variable 5": {
+            "key_value": "*",
+            "reporting_frequency": "Hourly",
+            "variable_name": "Facility Total Produced Electricity Energy"
+        },
+        "Output:Variable 6": {
+            "key_value": "*",
+            "reporting_frequency": "Hourly",
+            "variable_name": "Exterior Lights Electricity Energy"
+        }
+    },
+    "PhotovoltaicPerformance:Simple": {
+        "Panel0PhotovoltaicPerformance": {
+            "conversion_efficiency_input_mode": "Fixed",
+            "fraction_of_surface_area_with_active_solar_cells": 0.5,
+            "value_for_cell_efficiency_if_fixed": 0.2
+        },
+        "Panel1PhotovoltaicPerformance": {
+            "conversion_efficiency_input_mode": "Fixed",
+            "fraction_of_surface_area_with_active_solar_cells": 0.5,
+            "value_for_cell_efficiency_if_fixed": 0.2
+        }
+    },
+    "RunPeriod": {
+        "Climate Studio": {
+            "apply_weekend_holiday_rule": "No",
+            "begin_day_of_month": 1,
+            "begin_month": 1,
+            "day_of_week_for_start_day": "Sunday",
+            "end_day_of_month": 31,
+            "end_month": 12,
+            "treat_weather_as_actual": "No",
+            "use_weather_file_daylight_saving_period": "No",
+            "use_weather_file_holidays_and_special_days": "No",
+            "use_weather_file_rain_indicators": "Yes",
+            "use_weather_file_snow_indicators": "Yes"
+        }
+    },
+    "Schedule:Compact": {
+        "AlwaysOn": {
+            "data": [
+                {
+                    "field": "Through: 12/31"
+                },
+                {
+                    "field": "For: AllDays"
+                },
+                {
+                    "field": "Until: 24:00"
+                },
+                {
+                    "field": 1.0
+                }
+            ],
+            "schedule_type_limits_name": "Fraction"
+        }
+    },
+    "ScheduleTypeLimits": {
+        "AnyNumber": {
+            "lower_limit_value": -100000000000.0,
+            "numeric_type": "Continuous",
+            "upper_limit_value": 100000000000.0
+        },
+        "Fraction": {
+            "lower_limit_value": 0.0,
+            "numeric_type": "Continuous",
+            "upper_limit_value": 1.0
+        },
+        "Temperature": {
+            "lower_limit_value": -60,
+            "numeric_type": "Continuous",
+            "upper_limit_value": 200
+        }
+    },
+    "Shading:Building:Detailed": {
+        "Panel0Surf": {
+            "number_of_vertices": 4,
+            "vertices": [
+                {
+                    "vertex_x_coordinate": 17.7583,
+                    "vertex_y_coordinate": -1.1824,
+                    "vertex_z_coordinate": 0.0
+                },
+                {
+                    "vertex_x_coordinate": 17.7583,
+                    "vertex_y_coordinate": -7.888,
+                    "vertex_z_coordinate": 0.0
+                },
+                {
+                    "vertex_x_coordinate": 56.7727,
+                    "vertex_y_coordinate": -7.888,
+                    "vertex_z_coordinate": 0.0
+                },
+                {
+                    "vertex_x_coordinate": 56.7727,
+                    "vertex_y_coordinate": -1.1824,
+                    "vertex_z_coordinate": 0.0
+                }
+            ]
+        },
+        "Panel1Surf": {
+            "number_of_vertices": 4,
+            "vertices": [
+                {
+                    "vertex_x_coordinate": 0.0,
+                    "vertex_y_coordinate": -6.5491,
+                    "vertex_z_coordinate": 33.405
+                },
+                {
+                    "vertex_x_coordinate": 60.9543,
+                    "vertex_y_coordinate": -6.5491,
+                    "vertex_z_coordinate": 33.405
+                },
+                {
+                    "vertex_x_coordinate": 60.9543,
+                    "vertex_y_coordinate": 7.1396,
+                    "vertex_z_coordinate": 41.2474
+                },
+                {
+                    "vertex_x_coordinate": 0.0,
+                    "vertex_y_coordinate": 7.1396,
+                    "vertex_z_coordinate": 41.2474
+                }
+            ]
+        }
+    },
+    "ShadowCalculation": {
+        "ShadowCalculation 1": {
+            "disable_self_shading_from_shading_zone_groups_to_other_zones": "No",
+            "disable_self_shading_within_shading_zone_groups": "No",
+            "maximum_figures_in_shadow_overlap_calculations": 15000,
+            "output_external_shading_calculation_results": "Yes",
+            "pixel_counting_resolution": 512,
+            "shading_calculation_method": "PolygonClipping",
+            "shading_calculation_update_frequency": 20,
+            "shading_calculation_update_frequency_method": "Periodic",
+            "sky_diffuse_modeling_algorithm": "SimpleSkyDiffuseModeling"
+        }
+    },
+    "SimulationControl": {
+        "SimulationControl 1": {
+            "do_plant_sizing_calculation": "No",
+            "do_system_sizing_calculation": "No",
+            "do_zone_sizing_calculation": "No",
+            "run_simulation_for_sizing_periods": "No",
+            "run_simulation_for_weather_file_run_periods": "Yes"
+        }
+    },
+    "Timestep": {
+        "Timestep 1": {
+            "number_of_timesteps_per_hour": 4
+        }
+    },
+    "Version": {
+        "Version 1": {
+            "version_identifier": "23.1"
+        }
+    }
+}

@@ -1,0 +1,102 @@
+Shadowing Combinations
+..Solar Distribution=FullExterior
+..In the following, only the first 10 reference surfaces will be shown.
+..But all surfaces are used in the calculations.
+==================================
+Surface=PANEL0SURF is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=7
+..Surface=Mir-SHADER_0
+..Surface=SHADER_1
+..Surface=Mir-SHADER_1
+..Surface=SHADER_2
+..Surface=SHADER_3
+..Surface=Mir-SHADER_3
+..Surface=Mir-SHADER_5
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-PANEL0SURF is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=SHADER_0 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-SHADER_0 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=4
+..Surface=Mir-SHADER_1
+..Surface=Mir-SHADER_2
+..Surface=Mir-SHADER_3
+..Surface=Mir-SHADER_5
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=SHADER_1 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-SHADER_1 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=4
+..Surface=Mir-SHADER_0
+..Surface=Mir-SHADER_2
+..Surface=Mir-SHADER_3
+..Surface=Mir-SHADER_5
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=SHADER_2 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-SHADER_2 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=4
+..Surface=Mir-SHADER_0
+..Surface=Mir-SHADER_1
+..Surface=Mir-SHADER_3
+..Surface=Mir-SHADER_5
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=SHADER_3 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-SHADER_3 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=4
+..Surface=Mir-SHADER_0
+..Surface=Mir-SHADER_1
+..Surface=Mir-SHADER_2
+..Surface=Mir-SHADER_5
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=SHADER_4 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-SHADER_4 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=5
+..Surface=Mir-SHADER_0
+..Surface=Mir-SHADER_1
+..Surface=Mir-SHADER_2
+..Surface=Mir-SHADER_3
+..Surface=Mir-SHADER_5
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=SHADER_5 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-SHADER_5 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
