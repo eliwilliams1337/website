@@ -28,4 +28,7 @@ Questions:
 
 Notes:
 Dec 2024: Initial Commit
+
 Jan 2025: Survey Created
+
+Feb 2025: First Invitations for interviews sent
