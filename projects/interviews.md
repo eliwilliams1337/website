@@ -5,7 +5,7 @@
 
 ### Format
 
-A series of prompt based responses, all formatted in mass here
+A series of prompt based responses, all formatted here
 
 _Notes:_
 
