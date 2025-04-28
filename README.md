@@ -23,7 +23,7 @@
 
 * [GarageScreen](projects/garagescreen.md)
 
-* [Interviews](projects/interview.md)
+* [Interviews](projects/interviews.md)
 
 ... want to browse some other images that aren't pages yet? [here...](projects/images)
 
