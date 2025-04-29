@@ -5,7 +5,9 @@
 
 ### Format
 
-A series of prompt based responses, all formatted here
+A series of prompt based responses, all formatted here.
+
+If you recieved this link, please consider it an invitation to complete the below interview.
 
 _Notes:_
 
