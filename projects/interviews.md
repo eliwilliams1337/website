@@ -2,8 +2,6 @@
 
 # "I die in this one"
 
- Format:
-
 A list of prompt based responses, all formatted here.
 
 If you recieved this link, please consider it an invitation to complete the below interview.
@@ -21,3 +19,5 @@ Jan 2025: Survey Created
 Feb 2025: Fell asleep at the wheel...
 
 April 2025: First link sent...
+
+May 2025: Interviews begin being posted
