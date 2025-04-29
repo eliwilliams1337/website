@@ -4,9 +4,11 @@
 
  Format:
 
-A series of prompt based responses, all formatted here.
+A list of prompt based responses, all formatted here.
 
 If you recieved this link, please consider it an invitation to complete the below interview.
+
+No data is collected other than your responses, so be as honest as you wish.
 
 ## [submit here](https://docs.google.com/forms/d/e/1FAIpQLScwNoCgmWZnN3sqX-q1YNi7ieuP7R2rxn_-Ypx1dfivWpKOPw/viewform?usp=preview)
 
