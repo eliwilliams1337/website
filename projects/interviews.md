@@ -24,7 +24,7 @@ May 2025: Interviews begin being posted
 
 # Interviews:
 
-LOADING INTERVIEWS 1-5 now !
+1. Anon
 
 ## Interview Questions:
 1. what's up? who are you?
@@ -40,4 +40,31 @@ LOADING INTERVIEWS 1-5 now !
 # Interview
 
 
+## 1. what's up? who are you?
+
+trying my best 
+## 2. what's the last thing you ate?
+
+berry smoothie with expired oat milk
+## 3. who was the last person you texted?
+
+my lover
+## 4. what was the last song you listened to? 
+
+[![Sly & The Family Stone - If You Want Me To Stay (Audio)](https://img.youtube.com/vi/gZFabOuF4Ps/maxresdefault.jpg)](https://www.youtube.com/watch?v=gZFabOuF4Ps)
+## 5. your rating for yourself
+
+10/10
+## 6. what are you doing next month in or around the 13th?
+
+getting a haircut
+## 7. who do you like the most out of all the people you know? (Please don't name a lover.)
+
+my mom
+## 8. Rate this graph of sea level rise (1 = good, 5= bad)
+
+5
+## 9. link you want to share
+
+[Charles Minard Cartography Infographics](https://www.nationalgeographic.com/culture/article/charles-minard-cartography-infographics-history)
 
