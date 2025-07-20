@@ -17,6 +17,7 @@ Working out of Long Island City, NY
 * Range of Edge Details
   
 <img width="2742" height="2057" alt="ColorPop" src="https://github.com/user-attachments/assets/b07b2e8f-5441-4122-823f-c1439191361c" />
+<img width=auto  height=auto alt="ColorPop" src="https://github.com/user-attachments/assets/20713fc2-1db4-4772-a984-0d4187bf4e99" />
 
 
 Don't be scared:
