@@ -7,6 +7,9 @@
 
 ### Pages:
 
+
+* [Acrylic Box Shop](projects/AcrylicBoxShop.md)
+
 * [Robotics Lab](projects/robots.md)
 
 * [Jamaica Transit Station Research](projects/JamaicaTrainStation.md)
