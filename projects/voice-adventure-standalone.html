@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Adventure Game</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        @keyframes blink {
+            0%, 49% { opacity: 1; }
+            50%, 100% { opacity: 0.3; }
+        }
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useRef, useEffect } = React;
+
+        const VoiceAdventureGame = () => {
+            const [gamePhase, setGamePhase] = useState('recording');
+            const [recordings, setRecordings] = useState({});
+            const [currentRecordingType, setCurrentRecordingType] = useState(null);
+            const [isRecording, setIsRecording] = useState(false);
+            const [adventureStep, setAdventureStep] = useState(0);
+            const [isPlaying, setIsPlaying] = useState(false);
+            const [errorMsg, setErrorMsg] = useState('');
+            const [streamRef, setStreamRef] = useState(null);
+            
+            const mediaRecorderRef = useRef(null);
+            const audioChunksRef = useRef([]);
+            const audioRef = useRef(null);
+
+            const voiceLines = [
+                { id: 'greeting', label: 'GREETING', prompt: 'Say: "Hello there, traveler!"' },
+                { id: 'excited', label: 'EXCITED', prompt: 'Say: "Wow! Amazing!"' },
+                { id: 'worried', label: 'WORRIED', prompt: 'Say: "Oh no, be careful!"' },
+                { id: 'question', label: 'QUESTION', prompt: 'Ask: "Can you help me?"' },
+                { id: 'thanks', label: 'THANKS', prompt: 'Say: "Thank you so much!"' },
+                { id: 'farewell', label: 'FAREWELL', prompt: 'Say: "Goodbye, friend!"' },
+            ];
+
+            const adventureStory = [
+                { 
+                    text: "You wake up in a mysterious forest. A friendly wizard appears before you.",
+                    character: "WIZARD",
+                    voice: 'greeting',
+                    choices: ['> Greet the wizard', '> Look around nervously']
+                },
+                {
+                    text: "The wizard smiles and shows you a magical glowing orb.",
+                    character: "WIZARD",
+                    voice: 'excited',
+                    choices: ['> Ask what it is', '> Touch the orb']
+                },
+                {
+                    text: "Suddenly, the orb begins to shake! The wizard looks concerned.",
+                    character: "WIZARD",
+                    voice: 'worried',
+                    choices: ['> Step back', '> Try to stabilize it']
+                },
+                {
+                    text: "The wizard needs your help to control the orb's power.",
+                    character: "WIZARD",
+                    voice: 'question',
+                    choices: ['> Offer to help', '> Ask for more information']
+                },
+                {
+                    text: "Together, you calm the orb's energy. The wizard is grateful!",
+                    character: "WIZARD",
+                    voice: 'thanks',
+                    choices: ['> Smile', '> Ask about your reward']
+                },
+                {
+                    text: "The wizard waves as you continue your journey through the forest.",
+                    character: "WIZARD",
+                    voice: 'farewell',
+                    choices: ['> End Story']
+                }
+            ];
+
+            const startRecording = async (voiceLineId) => {
+                setErrorMsg('');
+                
+                if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+                    setErrorMsg('ERROR: Browser does not support audio recording. Try Safari.');
+                    return;
+                }
+                
+                try {
+                    const stream = await navigator.mediaDevices.getUserMedia({ 
+                        audio: {
+                            echoCancellation: true,
+                            noiseSuppression: true,
+                            sampleRate: 44100
+                        } 
+                    });
+                    
+                    setStreamRef(stream);
+                    
+                    let options = { mimeType: 'audio/webm' };
+                    if (!MediaRecorder.isTypeSupported('audio/webm')) {
+                        options = { mimeType: 'audio/mp4' };
+                    }
+                    if (!MediaRecorder.isTypeSupported('audio/mp4')) {
+                        options = {};
+                    }
+                    
+                    const mediaRecorder = new MediaRecorder(stream, options);
+                    mediaRecorderRef.current = mediaRecorder;
+                    audioChunksRef.current = [];
+
+                    mediaRecorder.ondataavailable = (event) => {
+                        if (event.data.size > 0) {
+                            audioChunksRef.current.push(event.data);
+                        }
+                    };
+
+                    mediaRecorder.onstop = () => {
+                        const mimeType = mediaRecorder.mimeType;
+                        const audioBlob = new Blob(audioChunksRef.current, { type: mimeType });
+                        const audioUrl = URL.createObjectURL(audioBlob);
+                        setRecordings(prev => ({ ...prev, [voiceLineId]: audioUrl }));
+                        
+                        stream.getTracks().forEach(track => track.stop());
+                        setStreamRef(null);
+                        setIsRecording(false);
+                        setCurrentRecordingType(null);
+                    };
+
+                    mediaRecorder.start();
+                    setIsRecording(true);
+                    setCurrentRecordingType(voiceLineId);
+                    
+                } catch (error) {
+                    console.error('Recording error:', error);
+                    let errorMessage = 'ERROR: Cannot access microphone. ';
+                    
+                    if (error.name === 'NotAllowedError' || error.name === 'PermissionDeniedError') {
+                        errorMessage += 'Tap the AA icon in Safari address bar, then Website Settings, and allow microphone access.';
+                    } else if (error.name === 'NotFoundError') {
+                        errorMessage += 'No microphone found.';
+                    } else {
+                        errorMessage += error.message;
+                    }
+                    
+                    setErrorMsg(errorMessage);
+                    setIsRecording(false);
+                    setCurrentRecordingType(null);
+                }
+            };
+
+            const stopRecording = () => {
+                if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
+                    mediaRecorderRef.current.stop();
+                }
+                if (streamRef) {
+                    streamRef.getTracks().forEach(track => track.stop());
+                    setStreamRef(null);
+                }
+            };
+
+            const playRecording = (voiceLineId) => {
+                const audioUrl = recordings[voiceLineId];
+                if (audioUrl && audioRef.current) {
+                    audioRef.current.src = audioUrl;
+                    audioRef.current.play().catch(err => {
+                        console.error('Playback error:', err);
+                    });
+                    setIsPlaying(true);
+                    audioRef.current.onended = () => setIsPlaying(false);
+                }
+            };
+
+            const deleteRecording = (voiceLineId) => {
+                setRecordings(prev => {
+                    const newRecordings = { ...prev };
+                    if (newRecordings[voiceLineId]) {
+                        URL.revokeObjectURL(newRecordings[voiceLineId]);
+                        delete newRecordings[voiceLineId];
+                    }
+                    return newRecordings;
+                });
+            };
+
+            const startAdventure = () => {
+                if (Object.keys(recordings).length === voiceLines.length) {
+                    setGamePhase('adventure');
+                    setAdventureStep(0);
+                }
+            };
+
+            const playStoryVoice = () => {
+                const currentStory = adventureStory[adventureStep];
+                if (currentStory && recordings[currentStory.voice]) {
+                    playRecording(currentStory.voice);
+                }
+            };
+
+            const nextStep = () => {
+                if (adventureStep < adventureStory.length - 1) {
+                    setAdventureStep(adventureStep + 1);
+                } else {
+                    setGamePhase('recording');
+                    setAdventureStep(0);
+                }
+            };
+
+            useEffect(() => {
+                if (gamePhase === 'adventure' && adventureStep < adventureStory.length) {
+                    const timer = setTimeout(() => playStoryVoice(), 800);
+                    return () => clearTimeout(timer);
+                }
+            }, [adventureStep, gamePhase]);
+
+            return (
+                <div style={{
+                    minHeight: '100vh',
+                    backgroundColor: '#000000',
+                    color: '#00FF00',
+                    fontFamily: '"Courier New", Courier, monospace',
+                    padding: '10px',
+                    fontSize: '13px',
+                    boxSizing: 'border-box',
+                    overflowX: 'hidden'
+                }}>
+                    <audio ref={audioRef} />
+                    
+                    <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+                        <pre style={{ 
+                            color: '#00FF00', 
+                            marginBottom: '20px', 
+                            fontSize: '10px',
+                            overflowX: 'auto',
+                            whiteSpace: 'pre'
+                        }}>
+{`╔════════════════════════════════════════════════════════╗
+║         VOICE ADVENTURE SYSTEM v1.0                    ║
+║         MS-DOS Compatible Edition                      ║
+╚════════════════════════════════════════════════════════╝`}
+                        </pre>
+
+                        {errorMsg && (
+                            <div style={{
+                                backgroundColor: '#AA0000',
+                                color: '#FFFFFF',
+                                padding: '10px',
+                                marginBottom: '20px',
+                                border: '2px solid #FF0000',
+                                wordWrap: 'break-word',
+                                fontSize: '12px',
+                                lineHeight: '1.4'
+                            }}>
+                                {errorMsg}
+                            </div>
+                        )}
+
+                        {gamePhase === 'recording' && (
+                            <div>
+                                <pre style={{ marginBottom: '20px', fontSize: '10px', overflowX: 'auto' }}>
+{`┌────────────────────────────────────────────────────┐
+│ RECORDING STUDIO - VOICE CAPTURE MODULE            │
+└────────────────────────────────────────────────────┘`}
+                                </pre>
+                                
+                                <div style={{ marginBottom: '20px', fontSize: '12px' }}>
+                                    <p style={{ marginBottom: '5px' }}>SYSTEM: Record all {voiceLines.length} voice lines.</p>
+                                    <p style={{ marginBottom: '5px', wordWrap: 'break-word' }}>
+                                        PROGRESS: [{Object.keys(recordings).length}/{voiceLines.length}] {
+                                        '█'.repeat(Object.keys(recordings).length) + 
+                                        '░'.repeat(voiceLines.length - Object.keys(recordings).length)
+                                    }</p>
+                                </div>
+
+                                {voiceLines.map((voiceLine) => {
+                                    const hasRecording = recordings[voiceLine.id];
+                                    const isCurrentlyRecording = isRecording && currentRecordingType === voiceLine.id;
+
+                                    return (
+                                        <div 
+                                            key={voiceLine.id}
+                                            style={{
+                                                border: '1px solid #00FF00',
+                                                padding: '10px',
+                                                marginBottom: '15px',
+                                                backgroundColor: isCurrentlyRecording ? '#003300' : '#000000',
+                                                boxSizing: 'border-box'
+                                            }}
+                                        >
+                                            <div style={{ marginBottom: '10px' }}>
+                                                <div style={{ fontSize: '14px', fontWeight: 'bold', marginBottom: '5px' }}>
+                                                    [{voiceLine.label}]
+                                                </div>
+                                                <div style={{ 
+                                                    color: '#00AA00', 
+                                                    fontSize: '11px',
+                                                    wordWrap: 'break-word',
+                                                    lineHeight: '1.3'
+                                                }}>
+                                                    {voiceLine.prompt}
+                                                </div>
+                                            </div>
+                                            
+                                            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                                                {!hasRecording && !isCurrentlyRecording && (
+                                                    <button
+                                                        onClick={() => startRecording(voiceLine.id)}
+                                                        disabled={isRecording}
+                                                        style={{
+                                                            backgroundColor: '#AA0000',
+                                                            color: '#FFFFFF',
+                                                            border: '2px solid #FF0000',
+                                                            padding: '6px 12px',
+                                                            cursor: isRecording ? 'not-allowed' : 'pointer',
+                                                            fontFamily: 'inherit',
+                                                            fontSize: '11px',
+                                                            opacity: isRecording ? 0.5 : 1,
+                                                            whiteSpace: 'nowrap'
+                                                        }}
+                                                    >
+                                                        [REC]
+                                                    </button>
+                                                )}
+                                                
+                                                {isCurrentlyRecording && (
+                                                    <button
+                                                        onClick={stopRecording}
+                                                        style={{
+                                                            backgroundColor: '#AA0000',
+                                                            color: '#FFFF00',
+                                                            border: '2px solid #FF0000',
+                                                            padding: '6px 12px',
+                                                            cursor: 'pointer',
+                                                            fontFamily: 'inherit',
+                                                            fontSize: '11px',
+                                                            animation: 'blink 1s infinite',
+                                                            whiteSpace: 'nowrap'
+                                                        }}
+                                                    >
+                                                        [■] STOP
+                                                    </button>
+                                                )}
+
+                                                {hasRecording && (
+                                                    <>
+                                                        <button
+                                                            onClick={() => playRecording(voiceLine.id)}
+                                                            disabled={isPlaying}
+                                                            style={{
+                                                                backgroundColor: '#00AA00',
+                                                                color: '#000000',
+                                                                border: '2px solid #00FF00',
+                                                                padding: '6px 12px',
+                                                                cursor: isPlaying ? 'not-allowed' : 'pointer',
+                                                                fontFamily: 'inherit',
+                                                                fontSize: '11px',
+                                                                opacity: isPlaying ? 0.5 : 1,
+                                                                whiteSpace: 'nowrap'
+                                                            }}
+                                                        >
+                                                            [▶]
+                                                        </button>
+                                                        <button
+                                                            onClick={() => deleteRecording(voiceLine.id)}
+                                                            style={{
+                                                                backgroundColor: '#AA5500',
+                                                                color: '#FFFFFF',
+                                                                border: '2px solid #FFAA00',
+                                                                padding: '6px 12px',
+                                                                cursor: 'pointer',
+                                                                fontFamily: 'inherit',
+                                                                fontSize: '11px',
+                                                                whiteSpace: 'nowrap'
+                                                            }}
+                                                        >
+                                                            [DEL]
+                                                        </button>
+                                                    </>
+                                                )}
+                                            </div>
+                                            
+                                            {hasRecording && (
+                                                <div style={{ marginTop: '8px', color: '#00FF00', fontSize: '11px' }}>
+                                                    ● RECORDED
+                                                </div>
+                                            )}
+                                        </div>
+                                    );
+                                })}
+
+                                <div style={{ marginTop: '20px', textAlign: 'center' }}>
+                                    <button
+                                        onClick={startAdventure}
+                                        disabled={Object.keys(recordings).length < voiceLines.length}
+                                        style={{
+                                            backgroundColor: Object.keys(recordings).length < voiceLines.length ? '#555555' : '#0000AA',
+                                            color: '#FFFFFF',
+                                            border: '3px solid ' + (Object.keys(recordings).length < voiceLines.length ? '#888888' : '#5555FF'),
+                                            padding: '12px 20px',
+                                            fontSize: '13px',
+                                            cursor: Object.keys(recordings).length < voiceLines.length ? 'not-allowed' : 'pointer',
+                                            fontFamily: 'inherit',
+                                            wordWrap: 'break-word',
+                                            maxWidth: '100%'
+                                        }}
+                                    >
+                                        {Object.keys(recordings).length < voiceLines.length 
+                                            ? '[ RECORDING INCOMPLETE ]' 
+                                            : '[ START ADVENTURE ]'}
+                                    </button>
+                                </div>
+                            </div>
+                        )}
+
+                        {gamePhase === 'adventure' && adventureStep < adventureStory.length && (
+                            <div>
+                                <pre style={{ marginBottom: '20px', fontSize: '10px', overflowX: 'auto' }}>
+{`┌────────────────────────────────────────────────────┐
+│ ADVENTURE MODE - STEP ${(adventureStep + 1).toString().padStart(2, '0')}/${adventureStory.length}                    │
+└────────────────────────────────────────────────────┘`}
+                                </pre>
+
+                                <div style={{
+                                    border: '2px solid #00FF00',
+                                    padding: '15px',
+                                    marginBottom: '20px',
+                                    backgroundColor: '#001100',
+                                    boxSizing: 'border-box'
+                                }}>
+                                    <p style={{ 
+                                        lineHeight: '1.5', 
+                                        marginBottom: '15px',
+                                        fontSize: '13px',
+                                        wordWrap: 'break-word'
+                                    }}>
+                                        {adventureStory[adventureStep].text}
+                                    </p>
+                                    
+                                    <div style={{ borderTop: '1px solid #00AA00', paddingTop: '10px' }}>
+                                        <div style={{ marginBottom: '8px', fontSize: '12px' }}>
+                                            [{adventureStory[adventureStep].character}]
+                                        </div>
+                                        <button
+                                            onClick={playStoryVoice}
+                                            disabled={isPlaying}
+                                            style={{
+                                                backgroundColor: '#004400',
+                                                color: '#00FF00',
+                                                border: '1px solid #00AA00',
+                                                padding: '6px 12px',
+                                                cursor: isPlaying ? 'not-allowed' : 'pointer',
+                                                fontFamily: 'inherit',
+                                                fontSize: '11px',
+                                                opacity: isPlaying ? 0.5 : 1
+                                            }}
+                                        >
+                                            {isPlaying ? '[♪] PLAY...' : '[▶] VOICE'}
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div style={{ marginBottom: '10px', fontSize: '12px' }}>SELECT:</div>
+                                    {adventureStory[adventureStep].choices.map((choice, idx) => (
+                                        <button
+                                            key={idx}
+                                            onClick={nextStep}
+                                            style={{
+                                                display: 'block',
+                                                width: '100%',
+                                                backgroundColor: '#000000',
+                                                color: '#00FF00',
+                                                border: '1px solid #00AA00',
+                                                padding: '10px',
+                                                marginBottom: '8px',
+                                                cursor: 'pointer',
+                                                textAlign: 'left',
+                                                fontFamily: 'inherit',
+                                                fontSize: '12px',
+                                                boxSizing: 'border-box',
+                                                wordWrap: 'break-word'
+                                            }}
+                                            onMouseOver={(e) => e.target.style.backgroundColor = '#003300'}
+                                            onMouseOut={(e) => e.target.style.backgroundColor = '#000000'}
+                                        >
+                                            {choice}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+
+                        <pre style={{ 
+                            marginTop: '30px', 
+                            color: '#00AA00', 
+                            fontSize: '9px',
+                            overflowX: 'auto'
+                        }}>
+{`────────────────────────────────────────────────────────
+System ready. _`}
+                        </pre>
+                    </div>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<VoiceAdventureGame />, document.getElementById('root'));
+    </script>
+</body>
+</html>
