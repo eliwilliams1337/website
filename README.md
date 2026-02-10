@@ -7,16 +7,11 @@
 
 ### Pages:
 
-
-* [Acrylic Box Shop](projects/AcrylicBoxShop.md)
-
 * [Robotics Lab](projects/robots.md)
 
 * [Jamaica Transit Station Research](projects/JamaicaTrainStation.md)
 
 * [Concept Models](projects/ConceptModels.MD)
-
-* [ShakerTable](projects/ShakeTable.md)
 
 * [History of Artifex Technologies Inc](projects/artifexstory.md)
 
@@ -26,9 +21,6 @@
 
 * [GarageScreen](projects/garagescreen.md)
 
-* [Interviews](projects/interviews.md)
-
-... want to browse some other images that aren't pages yet? [here...](projects/images)
 
 ### List of Projects maintained (or supported) that are hosted other places:
 
@@ -57,6 +49,9 @@ Resume & CV: [Here](https://docs.google.com/document/d/1uRs6T1rA4u5POm-zIP_30t6D
 Jekyll Version of this same website information:
 
 https://eliwilliams1337.github.io/website/
+
+
+... want to browse some other images that aren't pages yet? [here...](projects/images)
 
 _Site Currently Under Construction . . . ._
 
